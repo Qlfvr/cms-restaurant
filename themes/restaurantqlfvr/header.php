@@ -9,3 +9,17 @@
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
 </head>
+
+<body>
+    <?php wp_body_open(); ?>
+
+    <nav>
+        <?php 
+wp_nav_menu(
+        array(
+        'theme_location"' =>  'primary',
+         'container_class' => 'primary-menu' 
+         )
+); 
+?>
+    </nav>
