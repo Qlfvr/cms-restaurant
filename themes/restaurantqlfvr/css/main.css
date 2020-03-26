@@ -2579,6 +2579,21 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+.icon {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.home-white {
+  background-image: url(../assets/svg/home-minimal.svg);
+  height: 16px;
+  width: 16px; }
+
+.supermarket-white {
+  background-image: url(../assets/svg/supermarket.svg);
+  height: 24px;
+  width: 24px; }
+
 header {
   margin: 0;
   background-color: black;
@@ -2602,15 +2617,21 @@ header {
       header nav {
         max-width: 1140px; } }
     header nav ul {
+      display: flex;
+      align-content: center;
       padding: 0;
       list-style: none; }
     header nav li {
-      display: inline-block;
       padding: 0 1rem;
       font-weight: 600; }
     header nav a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       color: white;
-      text-decoration: none; }
+      text-decoration: none;
+      min-width: 24px;
+      min-height: 24px; }
     header nav h1 {
       text-transform: uppercase;
       font-weight: 700;
