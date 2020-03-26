@@ -1,0 +1,41 @@
+header {
+    margin: 0;
+    background-color: black;
+    min-height: 10rem;
+
+    nav {
+        @include make-container-max-widths();
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+        color: white;
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+            padding: 0 1rem;
+            font-weight: 600;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 2rem;
+        }
+    }
+}
+
+.primary-menu {
+    display: flex;
+    align-items: center;
+}

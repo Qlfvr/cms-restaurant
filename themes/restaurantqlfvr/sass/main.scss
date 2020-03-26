@@ -1,7 +1,15 @@
 // Import bootstrap grid system
-@import "../node_modules/bootstrap/scss/grid";
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../node_modules/bootstrap/scss/mixins';
+
+@import 'header';
+
+
 
 body {
-
     background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
 }
