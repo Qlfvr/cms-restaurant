@@ -2602,7 +2602,8 @@ html {
 header {
   margin: 0;
   background-color: black;
-  min-height: 10rem; }
+  min-height: 10rem;
+  min-height: 600px; }
   header nav {
     margin: auto;
     display: flex;

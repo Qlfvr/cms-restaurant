@@ -2,6 +2,7 @@ header {
         margin: 0;
         background-color: black;
         min-height: 10rem;
+        min-height: 600px;
 
         nav {
                 @include make-container-max-widths();

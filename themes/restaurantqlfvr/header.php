@@ -10,12 +10,20 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
     <?php wp_head(); ?>
+    <style>
+        header{
+            background: url('<?php echo get_header_image() ?>') center / cover no-repeat ;
+        }
+    </style>
 </head>
 
 <body>
     <?php wp_body_open(); ?>
 
     <header>
+
+
+
         <nav>
             <h1><?php bloginfo('name') ;?></h1>
 
