@@ -7,6 +7,8 @@ wp_enqueue_style( 'restaurantqlfvr', get_template_directory_uri().'/css/main.css
 }
 add_action( 'wp_enqueue_scripts', 'restaurantqlfvr_enqueue_style' );
 
+add_theme_support( 'post-thumbnails' );
+
 // Create Menu Location
 
 function create_menu_locations() {
