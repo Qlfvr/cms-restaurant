@@ -15,4 +15,6 @@ register_nav_menu('primary',__( 'Primary' ));
 }
 add_action( 'init', 'create_menu_locations' );
 
+
+
 ?>

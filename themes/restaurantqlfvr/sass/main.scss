@@ -1,16 +1,24 @@
+$secondary : #282828;
+$primary: #F7F7F7;
+$background : #EEEEEE;
+
+$grid-gutter-width: 45px;
+
 // Import bootstrap grid system
 @import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
-@import '../node_modules/bootstrap/scss/mixins';
-
 @import 'icons';
 @import 'header';
-
+@import 'footer';
 
 
 body {
-    background-color: lightgrey;
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
+        background-color: $background;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+        font-size: 2rem;
 
 }
