@@ -2795,24 +2795,27 @@ body {
   position: relative;
   bottom: 20px; }
 
-.site-main {
-  margin: auto;
-  padding: 1.5rem 0; }
-  @media (min-width: 576px) {
-    .site-main {
-      max-width: 540px; } }
-  @media (min-width: 768px) {
-    .site-main {
-      max-width: 720px; } }
-  @media (min-width: 992px) {
-    .site-main {
-      max-width: 960px; } }
-  @media (min-width: 1200px) {
-    .site-main {
-      max-width: 1140px; } }
-
 .container {
-  padding: 0; }
+  padding-top: 1rem; }
 
 h3 {
   font-size: 2rem; }
+
+section h1, section h2 {
+  text-align: center; }
+
+section h1 {
+  font-weight: 400;
+  text-transform: capitalize; }
+
+section h2 {
+  font-weight: 600;
+  text-transform: uppercase; }
+
+.osm {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  pointer-events: none; }

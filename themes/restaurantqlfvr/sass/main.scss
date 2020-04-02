@@ -30,19 +30,41 @@ body {
 
 }
 
-.site-main {
-    @include make-container-max-widths();
-    margin: auto;
-    padding: 1.5rem 0;
-
-}
 
 .container {
-    padding: 0;
+    padding-top: 1rem;
 }
 
 h3 {
     font-size: 2rem;
 
 }
+
+section {
+    h1, h2 {
+        text-align: center;
+    }
+
+    h1 {
+        font-weight: 400;
+        text-transform: capitalize;
+
+    }
+
+    h2 {
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+}
+
+
+.osm {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
 
