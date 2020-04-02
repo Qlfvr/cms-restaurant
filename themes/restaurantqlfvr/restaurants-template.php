@@ -1,3 +1,15 @@
+<?php
+/* Template Name: Restaurants */
+
+// The Query
+
+$args = array(
+    'post_type' => 'resto'
+);
+
+$resto_query = new WP_Query($args);
+
+?>
 <?php get_header(); ?>
 
 
@@ -5,13 +17,12 @@
         <main id="main" class="site-main">
 
             <?php
-            if (have_posts()) {
+            if ($resto_query->have_posts()) {
 
                 // Load posts loop.
-                while (have_posts()) {
-                    the_post();
-
-                    get_template_part('template-parts/content/content');
+                while ($resto_query->have_posts()) {
+                    $resto_query->the_post();
+                    get_template_part('template-parts/content/content', 'restaurants');
                 }
 
                 // Previous/next page navigation.
@@ -23,6 +34,7 @@
                 get_template_part('template-parts/content/content', 'none');
 
             }
+            wp_reset_postdata();
             ?>
 
         </main><!-- .site-main -->

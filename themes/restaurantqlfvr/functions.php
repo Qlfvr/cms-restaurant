@@ -11,6 +11,13 @@ add_action( 'wp_enqueue_scripts', 'restaurantqlfvr_enqueue_style' );
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'custom-header' );
 
+
+// Add custom post to the loop  (default deal only with regular posts and pages)
+
+
+
+
+
 // Create Menu Location
 
 function create_menu_locations() {
