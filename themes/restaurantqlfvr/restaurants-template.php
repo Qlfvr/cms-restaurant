@@ -45,7 +45,7 @@ $resto_query = new WP_Query($args);
             </section>
 
             <!--Map section-->
-            <section>
+            <section class="section--white--deco">
                 <h1>Find Us</h1>
                 <h2>Location</h2>
 
@@ -57,10 +57,13 @@ $resto_query = new WP_Query($args);
             <!--Reservation section-->
 
 
-            <section class="container">
-                <h1>Submit information to place order</h1>
-                <h2>Reserve a table</h2>
+            <section class="section--white">
+                <div class="container">
+                    <h1>Submit information to place order</h1>
+                    <h2>Reserve a table</h2>
 
+                    <img src="https://via.placeholder.com/800x600" alt="">
+                </div>
             </section>
 
 

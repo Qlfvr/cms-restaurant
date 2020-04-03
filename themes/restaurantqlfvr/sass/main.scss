@@ -57,6 +57,18 @@ section {
     }
 }
 
+.section--white--deco {
+
+    background-image: url('../assets/images/hachures-blanches.png'), linear-gradient(0deg, #fff, #fff);
+    background-position: top, 0px 50px;
+    background-repeat: no-repeat;
+    padding-top: 50px;
+
+}
+
+.section--white {
+    background-color: white;
+}
 
 .osm {
     -webkit-filter: grayscale(100%);
