@@ -56,13 +56,47 @@ $resto_query = new WP_Query($args);
 
             <!--Reservation section-->
 
-
             <section class="section--white">
                 <div class="container">
                     <h1>Submit information to place order</h1>
                     <h2>Reserve a table</h2>
 
                     <img src="https://via.placeholder.com/800x600" alt="">
+                </div>
+            </section>
+
+            <!--Discover our menu section-->
+
+            <section class="section--white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 d-flex flex-column justify-content-between">
+
+                            <div class="img2x2">
+                                <img src="https://via.placeholder.com/100X100" alt="">
+                                <img src="https://via.placeholder.com/100X100" alt="">
+                                <img src="https://via.placeholder.com/100X100" alt="">
+                                <img src="https://via.placeholder.com/100X100" alt="">
+                            </div>
+
+                        </div>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+
+                            <div>
+                                <h1>Submit information to place order</h1>
+                                <h2>Reserve a table</h2>
+                            </div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque ex
+                                laboriosam maiores nobis, placeat quos repellendus! Aliquid aperiam consectetur
+                                dignissimos eius est eum maxime mollitia. Deserunt dolorum incidunt labore!
+
+                            </p>
+                            <p><a class="btn" href="#">View the full Menu</a></p>
+
+
+                        </div>
+                    </div>
                 </div>
             </section>
 

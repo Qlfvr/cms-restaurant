@@ -2796,7 +2796,7 @@ body {
   bottom: 20px; }
 
 .container {
-  padding-top: 1rem; }
+  padding: 1.5rem 0; }
 
 h3 {
   font-size: 2rem; }
@@ -2811,6 +2811,10 @@ section h1 {
 section h2 {
   font-weight: 600;
   text-transform: uppercase; }
+
+section p {
+  text-align: center;
+  font-size: 0.9rem; }
 
 .section--white--deco {
   background-image: url("../assets/images/hachures-blanches.png"), linear-gradient(0deg, #fff, #fff);
@@ -2828,3 +2832,21 @@ section h2 {
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
   pointer-events: none; }
+
+.img2x2 {
+  width: 350px;
+  margin: auto; }
+  .img2x2 img {
+    width: 50%;
+    height: 50%;
+    float: left;
+    border: solid white 2px;
+    box-sizing: border-box; }
+
+.btn {
+  text-decoration: none;
+  background-color: #282828;
+  border: none;
+  padding: 0.25rem 1rem;
+  color: white;
+  font-weight: 600; }

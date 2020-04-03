@@ -32,7 +32,7 @@ body {
 
 
 .container {
-    padding-top: 1rem;
+    padding: 1.5rem 0;
 }
 
 h3 {
@@ -54,6 +54,11 @@ section {
     h2 {
         font-weight: 600;
         text-transform: uppercase;
+    }
+
+    p {
+        text-align: center;
+        font-size: 0.9rem;
     }
 }
 
@@ -80,3 +85,29 @@ section {
 }
 
 
+.img2x2 {
+
+    width: 350px;
+    margin: auto;
+
+    img {
+
+        width: 50%;
+        height: 50%;
+        float: left;
+        border: solid white 2px;
+        box-sizing: border-box;
+
+    }
+}
+
+
+.btn {
+    text-decoration: none;
+    background-color: $secondary;
+    border: none;
+    padding: 0.25rem 1rem;
+    color: white;
+    font-weight: 600;
+
+}
