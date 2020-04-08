@@ -143,7 +143,7 @@
 	 */
 	function supportsInlineSVG() {
 		var div = document.createElement( 'div' );
-		div.innerHTML = '<svg/>';
+		div.innerHTML = '<icons/>';
 		return 'http://www.w3.org/2000/svg' === ( 'undefined' !== typeof SVGRect && div.firstChild && div.firstChild.namespaceURI );
 	}
 

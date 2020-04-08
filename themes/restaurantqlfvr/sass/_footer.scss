@@ -36,7 +36,7 @@ footer {
                 line-height: 2em;
 
                 &::before {
-                        content: url(../assets/svg/time-clock.svg);
+                        content: url(../assets/icons/time-clock.svg);
                         position: relative;
                         top: 5px;
                         right: 10px;
@@ -65,7 +65,7 @@ footer {
 }
 
 .phone::before{
-        content: url("../assets/svg/call.svg");
+        content: url("../assets/icons/call.svg");
         position: absolute;
         left: 40px;
         margin-top: 3px;
@@ -73,7 +73,7 @@ footer {
 }
 
 .adress::before{
-        content: url("../assets/svg/place.svg");
+        content: url("../assets/icons/place.svg");
         position: absolute;
         left: 40px;
         margin-top: 3px;
@@ -81,7 +81,7 @@ footer {
 }
 
 .email::before{
-        content: url("../assets/svg/mail-1.svg");
+        content: url("../assets/icons/mail-1.svg");
         position: absolute;
         left: 40px;
         margin-top: 2px;

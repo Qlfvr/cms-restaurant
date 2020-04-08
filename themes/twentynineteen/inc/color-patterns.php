@@ -104,7 +104,7 @@ function twentynineteen_custom_colors_css() {
 		 * - Post navigation links
 		 * - Post entry meta hover
 		 * - Post entry header more-link hover
-		 * - main navigation svg
+		 * - main navigation icons
 		 * - comment navigation
 		 * - Comment edit link hover
 		 * - Site Footer Link hover
@@ -118,7 +118,7 @@ function twentynineteen_custom_colors_css() {
 		.entry .entry-meta a:hover,
 		.entry .entry-footer a:hover,
 		.entry .entry-content .more-link:hover,
-		.main-navigation .main-menu > li > a + svg,
+		.main-navigation .main-menu > li > a + icons,
 		.comment .comment-metadata > a:hover,
 		.comment .comment-metadata .comment-edit-link:hover,
 		#colophon .site-info a:hover,
@@ -166,7 +166,7 @@ function twentynineteen_custom_colors_css() {
 		/* Hover colors */
 		a:hover, a:active,
 		.main-navigation .main-menu > li > a:hover,
-		.main-navigation .main-menu > li > a:hover + svg,
+		.main-navigation .main-menu > li > a:hover + icons,
 		.post-navigation .nav-links a:hover,
 		.post-navigation .nav-links a:hover .post-title,
 		.author-bio .author-description .author-link:hover,

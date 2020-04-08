@@ -36,7 +36,7 @@ if ( ! function_exists( 'twentytwenty_get_theme_svg' ) ) {
 		$svg = wp_kses(
 			TwentyTwenty_SVG_Icons::get_svg( $svg_name, $group, $color ),
 			array(
-				'svg'     => array(
+				'icons'     => array(
 					'class'       => true,
 					'xmlns'       => true,
 					'width'       => true,

@@ -307,7 +307,7 @@ class acf_field_gallery extends acf_field {
 		} elseif( isset($attachment['sizes']['thumbnail']['url']) ) {
 			$thumb = $attachment['sizes']['thumbnail']['url'];
 		
-		// Use url for svg.
+		// Use url for icons.
 		} elseif( $attachment['type'] === 'image' ) {
 			$thumb = $attachment['url'];
 		

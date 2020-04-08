@@ -575,7 +575,7 @@ function sbi_get_database_settings() {
 		'sb_ajax_initial'    => false,
 		'enqueue_css_in_shortcode' => false,
 		'sb_instagram_disable_mob_swipe' => false,
-		'sbi_font_method' => 'svg',
+		'sbi_font_method' => 'icons',
 		'sb_instagram_disable_awesome'      => false
 	);
 	$sbi_settings = get_option( 'sb_instagram_settings', array() );
@@ -917,7 +917,7 @@ function sb_instagram_scripts_enqueue() {
 		wp_enqueue_style( 'sb_instagram_styles', trailingslashit( SBI_PLUGIN_URL ) . 'css/sb-instagram-2-2.min.css', array(), SBIVER );
 	}
 
-	$font_method = isset( $sb_instagram_settings['sbi_font_method'] ) ? $sb_instagram_settings['sbi_font_method'] : 'svg';
+	$font_method = isset( $sb_instagram_settings['sbi_font_method'] ) ? $sb_instagram_settings['sbi_font_method'] : 'icons';
 
 	if ( isset( $sb_instagram_settings['sb_instagram_disable_awesome'] ) ) {
 		$disable_font_awesome = isset( $sb_instagram_settings['sb_instagram_disable_awesome'] ) ? $sb_instagram_settings['sb_instagram_disable_awesome'] === 'on' : false;

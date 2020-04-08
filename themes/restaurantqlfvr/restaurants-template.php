@@ -49,19 +49,87 @@ $resto_query = new WP_Query($args);
                 <h1>Find Us</h1>
                 <h2>Location</h2>
 
-                <iframe class="osm" width="100%" height="450" frameborder="0" scrolling="no" marginheight="0"
-                        marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=5.55959701538086%2C50.63490032045192%2C5.583543777465821%2C50.64295659411748&amp;layer=mapnik&amp;marker=50.63892862990742%2C5.57157039642334"></iframe>
+                <?php echo the_field('iframe'); ?>
+
             </section>
 
             <!--Reservation section-->
 
-            <section class="section--white">
+            <section id="reservation" class="section--white">
                 <div class="container">
                     <h1>Submit information to place order</h1>
                     <h2>Reserve a table</h2>
 
-                    <img src="https://via.placeholder.com/800x600" alt="">
+
+                    <div class="reservation-wrapper">
+
+                        <img src="<?php echo the_field('reservation_img'); ?>" alt="" Reservation>
+
+                        <div class="reservation-form-wrapper">
+                            <form action="" method="get" class="reservation-form">
+
+                                <div class="form-row">
+
+                                    <fieldset>
+                                        <label for="name">Your name: </label>
+                                        <input type="text" name="name" id="name" required>
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <label for="email">Your email: </label>
+                                        <input type="email" name="email" id="email" required>
+                                    </fieldset>
+
+                                </div>
+
+                                <!--Ligne 2-->
+                                <div class="form-row">
+                                    <fieldset>
+                                        <label for="phone">Phone number </label>
+                                        <input type="text" name="phone" id="phone" required>
+                                    </fieldset>
+                                    <fieldset>
+                                        <label for="people">Table for</label>
+                                        <select type="people" name="people" id="people" required>
+                                            <option value="1">1 Person</option>
+                                            <option value="2">2 People</option>
+                                            <option value="3">3 People</option>
+                                            <option value="4">4 People</option>
+                                            <option value="5">5 People</option>
+                                            <option value="6">6 People</option>
+                                            <option value="7">7 People</option>
+                                            <option value="8">8 People</option>
+                                        </select>
+                                    </fieldset>
+                                </div>
+
+                                <div class="form-row">
+
+                                    <fieldset>
+                                        <label for="date">Select Date</label>
+                                        <input type="date" name="date" id="date" required>
+
+                                    </fieldset>
+
+                                    <fieldset>
+                                        <label for="time">Select Time</label>
+                                        <input type="time" name="time" id="time" min="09:00" max="21h30" required>
+                                    </fieldset>
+                                </div>
+                                <div class="form-row">
+
+                                    <fieldset>
+                                        <label for="message">Your Message</label>
+                                        <textarea name="" id="" rows="3"></textarea>
+                                    </fieldset>
+                                </div>
+
+
+                                <input class="btn" type="submit" value="Reserve now">
+                            </form>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -78,27 +146,27 @@ $resto_query = new WP_Query($args);
                                 <img src="https://via.placeholder.com/100X100" alt="">
                                 <img src="https://via.placeholder.com/100X100" alt="">
                             </div>
-
                         </div>
                         <div class="col-6 d-flex flex-column justify-content-between">
 
                             <div>
-                                <h1>Submit information to place order</h1>
-                                <h2>Reserve a table</h2>
+                                <h1>Let's discover food</h1>
+                                <h2>Discover our menu</h2>
                             </div>
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur cumque ex
+                            <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur cumque ex
                                 laboriosam maiores nobis, placeat quos repellendus! Aliquid aperiam consectetur
                                 dignissimos eius est eum maxime mollitia. Deserunt dolorum incidunt labore!
 
                             </p>
                             <p><a class="btn" href="#">View the full Menu</a></p>
-
-
                         </div>
                     </div>
                 </div>
             </section>
+
+
+            <?php get_template_part('template-parts/parts/parts', 'recipes'); ?>
 
 
         </main><!-- .site-main -->

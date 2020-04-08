@@ -150,8 +150,8 @@ add_action( 'after_setup_theme', 'twentytwenty_theme_support' );
 require get_template_directory() . '/inc/template-tags.php';
 
 // Handle SVG icons.
-require get_template_directory() . '/classes/class-twentytwenty-svg-icons.php';
-require get_template_directory() . '/inc/svg-icons.php';
+require get_template_directory() . '/classes/class-twentytwenty-icons-icons.php';
+require get_template_directory() . '/inc/icons-icons.php';
 
 // Handle Customizer settings.
 require get_template_directory() . '/classes/class-twentytwenty-customize.php';

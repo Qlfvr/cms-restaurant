@@ -12,7 +12,7 @@
  */
 function twentyseventeen_include_svg_icons() {
 	// Define SVG sprite file.
-	$svg_icons = get_parent_theme_file_path( '/assets/images/svg-icons.svg' );
+	$svg_icons = get_parent_theme_file_path( '/assets/images/icons-icons.icons' );
 
 	// If it exists, include it.
 	if ( file_exists( $svg_icons ) ) {
@@ -83,7 +83,7 @@ function twentyseventeen_get_svg( $args = array() ) {
 	}
 
 	// Begin SVG markup.
-	$svg = '<svg class="icon icon-' . esc_attr( $args['icon'] ) . '"' . $aria_hidden . $aria_labelledby . ' role="img">';
+	$svg = '<icons class="icon icon-' . esc_attr( $args['icon'] ) . '"' . $aria_hidden . $aria_labelledby . ' role="img">';
 
 	// Display the title.
 	if ( $args['title'] ) {
@@ -106,10 +106,10 @@ function twentyseventeen_get_svg( $args = array() ) {
 
 	// Add some markup to use as a fallback for browsers that do not support SVGs.
 	if ( $args['fallback'] ) {
-		$svg .= '<span class="svg-fallback icon-' . esc_attr( $args['icon'] ) . '"></span>';
+		$svg .= '<span class="icons-fallback icon-' . esc_attr( $args['icon'] ) . '"></span>';
 	}
 
-	$svg .= '</svg>';
+	$svg .= '</icons>';
 
 	return $svg;
 }

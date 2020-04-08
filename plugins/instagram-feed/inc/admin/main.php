@@ -89,7 +89,7 @@ function sb_instagram_settings_page() {
 		'disable_js_image_loading'          => false,
 		'enqueue_js_in_head'                => false,
 		'sb_instagram_disable_mob_swipe' => false,
-		'sbi_font_method' => 'svg',
+		'sbi_font_method' => 'icons',
 		'sb_instagram_disable_awesome'      => false,
         'custom_template' => false
 	);
@@ -300,7 +300,7 @@ function sb_instagram_settings_page() {
 				isset($_POST[ 'sb_instagram_backup' ]) ? $sb_instagram_backup = $_POST[ 'sb_instagram_backup' ] : $sb_instagram_backup = '';
 				isset($_POST[ 'sb_ajax_initial' ]) ? $sb_ajax_initial = $_POST[ 'sb_ajax_initial' ] : $sb_ajax_initial = '';
 				isset($_POST[ 'enqueue_css_in_shortcode' ]) ? $enqueue_css_in_shortcode = $_POST[ 'enqueue_css_in_shortcode' ] : $enqueue_css_in_shortcode = '';
-				isset($_POST[ 'sbi_font_method' ]) ? $sbi_font_method = $_POST[ 'sbi_font_method' ] : $sbi_font_method = 'svg';
+				isset($_POST[ 'sbi_font_method' ]) ? $sbi_font_method = $_POST[ 'sbi_font_method' ] : $sbi_font_method = 'icons';
 				isset($_POST[ 'sb_instagram_disable_awesome' ]) ? $sb_instagram_disable_awesome = sanitize_text_field( $_POST[ 'sb_instagram_disable_awesome' ] ) : $sb_instagram_disable_awesome = '';
 
 				$options[ 'sb_instagram_width' ] = $sb_instagram_width;
@@ -1966,7 +1966,7 @@ function sb_instagram_settings_page() {
 					<th scope="row"><label for="sbi_font_method"><?php _e("Icon Method", 'instagram-feed'); ?></label></th>
 					<td>
 						<select name="sbi_font_method" id="sbi_font_method" class="default-text">
-							<option value="svg" id="sbi-font_method" class="default-text" <?php if($sbi_font_method == 'svg') echo 'selected="selected"' ?>>SVG</option>
+							<option value="svg" id="sbi-font_method" class="default-text" <?php if($sbi_font_method == 'icons') echo 'selected="selected"' ?>>SVG</option>
 							<option value="fontfile" id="sbi-font_method" class="default-text" <?php if($sbi_font_method == 'fontfile') echo 'selected="selected"' ?>><?php _e("Font File", 'instagram-feed'); ?></option>
 						</select>
 						<a class="sbi_tooltip_link" href="JavaScript:void(0);"><?php _e('What does this mean?', 'instagram-feed'); ?></a>

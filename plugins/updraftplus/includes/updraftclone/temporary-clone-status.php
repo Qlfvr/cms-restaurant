@@ -263,18 +263,18 @@ class UpdraftPlus_Temporary_Clone_Status {
 			padding-top: 15px;
 			padding-bottom: 10px;
 		}
-		span.icon svg {
+		span.icon icons {
 			display: inline-block;
 			max-width: 28px;
 			fill: #C4C4C4;
 			color: currentColor;
 		}
 
-		.done span.icon svg {
+		.done span.icon icons {
 			fill: green;
 		}
 
-		.active span.icon svg {
+		.active span.icon icons {
 			fill: #43322B;
 			-webkit-animation-name: rotateIcon;
 					animation-name: rotateIcon;
@@ -457,9 +457,9 @@ class UpdraftPlus_Temporary_Clone_Status {
 	 * @return string
 	 */
 	private function get_progress_item_icon($number = 1000) {
-		$icon = '<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">';
+		$icon = '<icons viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/icons">';
 		$icon .= '<use href="#'.(($number === $this->current_status) ? 'update' : (($number < $this->current_status) ? 'yes' : 'clock')).'" />';
-		$icon .= '</svg>';
+		$icon .= '</icons>';
 		return $icon;
 	}
 }

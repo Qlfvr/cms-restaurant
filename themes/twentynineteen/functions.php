@@ -297,7 +297,7 @@ add_action( 'wp_head', 'twentynineteen_colors_css_wrap' );
 /**
  * SVG Icons class.
  */
-require get_template_directory() . '/classes/class-twentynineteen-svg-icons.php';
+require get_template_directory() . '/classes/class-twentynineteen-icons-icons.php';
 
 /**
  * Custom Comment Walker template.

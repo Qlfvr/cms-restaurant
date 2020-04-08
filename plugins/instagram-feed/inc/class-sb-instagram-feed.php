@@ -1118,7 +1118,7 @@ class SB_Instagram_Feed
 	        return '';
         }
 		$sbi_options = sbi_get_database_settings();
-		$font_method = isset( $sbi_options['sbi_font_method'] ) ? $sbi_options['sbi_font_method'] : 'svg';
+		$font_method = isset( $sbi_options['sbi_font_method'] ) ? $sbi_options['sbi_font_method'] : 'icons';
 		$upload = wp_upload_dir();
 		$resized_url = trailingslashit( $upload['baseurl'] ) . trailingslashit( SBI_UPLOADS_NAME );
 
