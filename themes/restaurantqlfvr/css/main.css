@@ -2829,13 +2829,15 @@ section p {
 
 .img2x2 {
   width: 350px;
+  height: 350px;
   margin: auto; }
   .img2x2 img {
     width: 50%;
     height: 50%;
     float: left;
     border: solid white 2px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    object-fit: cover; }
 
 .btn {
   text-decoration: none;

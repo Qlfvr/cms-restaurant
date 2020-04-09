@@ -141,10 +141,10 @@ $resto_query = new WP_Query($args);
                         <div class="col-6 d-flex flex-column justify-content-between">
 
                             <div class="img2x2">
-                                <img src="https://via.placeholder.com/100X100" alt="">
-                                <img src="https://via.placeholder.com/100X100" alt="">
-                                <img src="https://via.placeholder.com/100X100" alt="">
-                                <img src="https://via.placeholder.com/100X100" alt="">
+                                <img src="<?php echo the_field('menu_image_1'); ?>" alt="">
+                                <img src="<?php echo the_field('menu_image_2'); ?>" alt="">
+                                <img src="<?php echo the_field('menu_image_3'); ?>" alt="">
+                                <img src="<?php echo the_field('menu_image_4'); ?>" alt="">
                             </div>
                         </div>
                         <div class="col-6 d-flex flex-column justify-content-between">
@@ -159,14 +159,14 @@ $resto_query = new WP_Query($args);
                                 dignissimos eius est eum maxime mollitia. Deserunt dolorum incidunt labore!
 
                             </p>
-                            <p><a class="btn" href="#">View the full Menu</a></p>
+                            <p class="text-center"><a class="btn" href="#">View the full Menu</a></p>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <?php get_template_part('template-parts/parts/parts', 'recipes'); ?>
+            <?php get_template_part('template-parts/modules/module', 'recipes'); ?>
 
 
         </main><!-- .site-main -->
