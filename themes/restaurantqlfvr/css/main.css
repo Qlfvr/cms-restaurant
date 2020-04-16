@@ -2602,7 +2602,7 @@ html {
 header {
   position: relative;
   margin: 0;
-  background-color: black;
+  background-color: #282828;
   /*
     min-height: 650px;
     */ }

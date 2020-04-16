@@ -14,12 +14,12 @@
         header {
         <?php
 
-         if (has_post_thumbnail()){
+         if (has_post_thumbnail() && !is_single()){
          echo "background: url('"; the_post_thumbnail_url(); echo "') center / cover no-repeat;";
          }
-         else {
+        /* else {
              echo "background: url('".get_header_image()."') center / cover no-repeat;";
-         }
+         }*/
 
          ?>
         }
