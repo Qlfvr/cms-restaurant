@@ -1,10 +1,10 @@
 <?php
-/* Template Name: Restaurants */
+/* Template Name: Recipes */
 
 // The Query
 
 $args = array(
-    'post_type' => 'resto'
+    'post_type' => 'recipes'
 );
 
 $resto_query = new WP_Query($args);
@@ -44,14 +44,8 @@ $resto_query = new WP_Query($args);
 
             </section>
 
-            <!--Map section-->
-            <?php get_template_part('template-parts/modules/module', 'map'); ?>
-            <!--Reservation section-->
-            <?php get_template_part('template-parts/modules/module', 'reservation'); ?>
-            <!--Discover our menu section-->
+
             <?php get_template_part('template-parts/modules/module', 'discover-menu'); ?>
-            <!--Last recipes-->
-            <?php get_template_part('template-parts/modules/module', 'recipes'); ?>
 
 
         </main><!-- .site-main -->

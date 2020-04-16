@@ -2603,7 +2603,9 @@ header {
   position: relative;
   margin: 0;
   background-color: black;
-  min-height: 650px; }
+  /*
+    min-height: 650px;
+    */ }
   header nav {
     position: relative;
     margin: auto;
@@ -2652,6 +2654,7 @@ header {
 #header-title {
   position: relative;
   margin: 2rem auto auto auto;
+  padding-bottom: 20rem;
   color: white; }
   @media (min-width: 576px) {
     #header-title {
@@ -2674,7 +2677,8 @@ header {
   #header-title h2 {
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
-    font-weight: 300; }
+    font-weight: 300;
+    text-transform: capitalize; }
 
 header::before {
   content: "";
@@ -2749,24 +2753,35 @@ footer {
 .post-card {
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(0, 450px);
   margin: 4rem auto;
   background-color: white; }
 
+.post-card.recipes:nth-child(odd) {
+  grid-template-columns: 60% 40%; }
+
+.post-card.recipes:nth-child(even) {
+  grid-template-columns: 40% 60%; }
+
 .post-card:nth-child(odd) .post-image {
   grid-column-start: 1;
-  grid-row-start: 1; }
+  grid-row-start: 1;
+  grid-row-end: 2; }
 
 .post-card:nth-child(odd) .post-content {
   grid-column-start: 2;
-  grid-row-start: 1; }
+  grid-row-start: 1;
+  grid-row-end: 2; }
 
 .post-card:nth-child(even) .post-image {
   grid-column-start: 2;
-  grid-row-start: 1; }
+  grid-row-start: 1;
+  grid-row-end: 2; }
 
 .post-card:nth-child(even) .post-content {
   grid-column-start: 1;
-  grid-row-start: 1; }
+  grid-row-start: 1;
+  grid-row-end: 2; }
 
 .post-image img {
   object-fit: cover;
