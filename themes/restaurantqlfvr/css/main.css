@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -2579,6 +2580,102 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
+/* =WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
 .icon {
   display: block;
   background-repeat: no-repeat;
@@ -2689,7 +2786,7 @@ header::before {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5); }
 
-.home header::before {
+.home header::before, .single header::before {
   content: none; }
 
 footer {
@@ -2809,6 +2906,85 @@ body {
   background-repeat: no-repeat;
   position: relative;
   bottom: 20px; }
+
+.single-recipes .content-area {
+  background: none; }
+
+.article-recipe {
+  max-width: 900px;
+  font-size: 0.9rem;
+  color: #282828;
+  /*OL style in recipes*/ }
+  .article-recipe a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 0.5rem; }
+  .article-recipe ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+    padding-left: 40px; }
+  .article-recipe ol li {
+    counter-increment: my-awesome-counter;
+    position: relative; }
+  .article-recipe ol li::before {
+    content: counter(my-awesome-counter);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    --size: 20px;
+    left: calc(-1 * var(--size) - 10px);
+    line-height: var(--size);
+    width: var(--size);
+    height: var(--size);
+    top: 0;
+    background: black;
+    border-radius: 50%;
+    text-align: center; }
+
+/*recipes entry-header précision inutile pour le moment. voir par la suite...*/
+.entry-header {
+  margin-top: -300px;
+  color: white;
+  background: none; }
+
+.entry-thumbnail {
+  width: 650px;
+  height: 250px; }
+  .entry-thumbnail img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+
+.social-links {
+  padding: 1rem 4rem 0 0;
+  display: flex;
+  flex-direction: column; }
+
+.social-link {
+  margin: 0.25rem 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .social-link-twitter {
+    background-color: #1DA1F2;
+    background-size: 10px;
+    background-image: url("../assets/icons/twitter.svg"); }
+  .social-link-facebook {
+    background-size: 6px;
+    background-color: #475996;
+    background-image: url("../assets/icons/facebook.svg"); }
+  .social-link-instagram {
+    background-size: 10px;
+    background-color: #C5435F;
+    background-image: url("../assets/icons/instagram.svg"); }
+  .social-link-mail {
+    background-size: 10px;
+    background-color: #000;
+    background-image: url("../assets/icons/mail-1.svg"); }
 
 .text-center {
   text-align: center; }
