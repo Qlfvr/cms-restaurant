@@ -86,8 +86,9 @@ header::before {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.home {
+.home, .single {
     header::before {
         content: none;
     }
 }
+
