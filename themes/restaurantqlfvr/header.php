@@ -32,24 +32,33 @@
 <header>
 
 
-    <nav>
-        <h1 class="site-title"><?php bloginfo('name'); ?></h1>
-
-        <button class="burger-button">
-            Menu &nbsp;
-            <img src="<?php echo get_template_directory_uri() ?>/assets/icons/burger.svg" alt="">
-        </button>
+    <nav class="navbar">
+        <h1 class="site-title"><a href="<?php home_url(); ?>/"><?php bloginfo('name'); ?></a></h1>
 
 
-        <?php
-        wp_nav_menu(
-            array(
-                'theme_location"' => 'primary',
-                'container' => '', /* No need for a container since ul menu in nav tag*/
-                'menu_class' => 'primary-menu'
-            )
-        );
-        ?>
+        <div id="menuWrapper" class="menu-wrapper">
+            <button id="burger" class="burger-button" onclick="collapseNavbar()">
+                Menu &nbsp;
+                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/burger.svg" alt="">
+            </button>
+
+            <button id="closeMenu" class="close-menu" onclick="collapseNavbar()">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/icons/close.svg " alt="">
+
+            </button>
+
+            <?php
+            wp_nav_menu(
+                array(
+                    'theme_location"' => 'primary',
+                    'container' => '', /* No need for a container since ul menu in nav tag*/
+                    'menu_class' => 'primary-menu',
+
+
+                )
+            );
+            ?>
+        </div>
     </nav>
 
     <div id="header-title">

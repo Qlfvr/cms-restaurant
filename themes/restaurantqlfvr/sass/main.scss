@@ -362,6 +362,10 @@ label, input {
     display: block;
 }
 
+button {
+    cursor: pointer;
+}
+
 .reservation-form {
     height: 100%;
     display: flex;

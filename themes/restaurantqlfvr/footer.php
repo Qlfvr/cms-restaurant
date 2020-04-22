@@ -42,7 +42,7 @@
                                 echo $value;
                                 if ($key != $lastRowKey) {
 
-                                     echo '<br>';
+                                    echo '<br>';
                                 }
                             }
                             // Do something...
@@ -67,6 +67,8 @@
 </footer>
 
 <?php wp_footer(); ?>
+
+<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/script.js"></script>
 </body>
 
 </html>
