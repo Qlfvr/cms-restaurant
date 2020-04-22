@@ -2699,54 +2699,46 @@ a img.aligncenter {
 header {
   position: relative;
   margin: 0;
-  background-color: #282828;
-  /*
-    min-height: 650px;
-    */ }
-  header nav {
-    position: relative;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-self: center;
-    color: #F7F7F7;
-    overflow: hidden; }
-    @media (min-width: 576px) {
-      header nav {
-        max-width: 540px; } }
-    @media (min-width: 768px) {
-      header nav {
-        max-width: 720px; } }
-    @media (min-width: 992px) {
-      header nav {
-        max-width: 960px; } }
-    @media (min-width: 1200px) {
-      header nav {
-        max-width: 1140px; } }
-    header nav ul {
-      display: flex;
-      align-content: center;
-      padding: 0;
-      list-style: none; }
-    header nav li {
-      padding: 0 1rem;
-      font-weight: 600; }
-    header nav a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-decoration: none;
-      min-width: 24px;
-      min-height: 24px; }
-    header nav h1 {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 2rem; }
+  background-color: #282828; }
 
-.primary-menu {
+.site-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem; }
+
+nav {
+  position: relative;
+  margin: auto;
   display: flex;
-  align-items: center; }
+  justify-content: space-between;
+  align-items: center;
+  color: #F7F7F7;
+  overflow: hidden; }
+  @media (min-width: 576px) {
+    nav {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    nav {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    nav {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    nav {
+      max-width: 1140px; } }
+
+ul.primary-menu {
+  display: flex;
+  align-content: center;
+  padding: 0;
+  list-style: none; }
+
+li.menu-item {
+  padding: 0 1rem;
+  font-weight: 600; }
+  li.menu-item a {
+    color: white;
+    text-decoration: none; }
 
 #header-title {
   position: relative;
@@ -2788,6 +2780,16 @@ header::before {
 
 .home header::before, .single header::before {
   content: none; }
+
+.burger-button {
+  display: none;
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600; }
 
 footer {
   background-image: url("../assets/images/hachures-noires.png"), linear-gradient(0deg, #282828, #282828);

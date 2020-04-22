@@ -33,14 +33,20 @@
 
 
     <nav>
-        <h1><?php bloginfo('name'); ?></h1>
+        <h1 class="site-title"><?php bloginfo('name'); ?></h1>
+
+        <button class="burger-button">
+            Menu &nbsp;
+            <img src="<?php echo get_template_directory_uri() ?>/assets/icons/burger.svg" alt="">
+        </button>
 
 
         <?php
         wp_nav_menu(
             array(
                 'theme_location"' => 'primary',
-                'container_class' => 'primary-menu'
+                'container' => '', /* No need for a container since ul menu in nav tag*/
+                'menu_class' => 'primary-menu'
             )
         );
         ?>
