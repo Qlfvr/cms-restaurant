@@ -1,4 +1,5 @@
 # Dependency directories
 themes/restaurantqlfvr/node_modules
-themes/twentynineteen
+themes/
+!themes/restaurantqlfvr
 updraft
