@@ -1,89 +1,145 @@
 footer {
 
-        background-image: url('../assets/images/hachures-noires.png'), linear-gradient(0deg, $secondary, $secondary);
-        background-position: top, 0px 50px;
-        background-repeat: no-repeat;
-        color: $primary;
-        padding: 2em;
+    background-image: url('../assets/images/hachures-noires.png'), linear-gradient(0deg, $secondary, $secondary);
+    background-position: top, 0px 50px;
+    background-repeat: no-repeat;
+    color: $primary;
+    padding: 2em;
 
-        hr {
-                color : #43484c;
+    hr {
+        color: #43484c;
 
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+
+    p {
+        font-size: 0.80rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+
+    .op-cell-heading {
+
+        font-weight: 400;
+        padding: 0;
+        padding-left: 10px;
+        line-height: 2em;
+
+        &::before {
+            content: url(../assets/icons/time-clock.svg);
+            position: relative;
+            top: 5px;
+            right: 10px;
         }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 { margin: 0;}
+    }
 
 
-        p {
-                font-size: 0.80rem;
-        }
+    .op-table {
+        width: 100%;
+        text-align: left;
+        font-size: 0.80rem;
+        margin-top: 0.6rem;
+    }
 
-        h3{
-                font-size: 1.8rem;
-        }
+    .op-period-time {
+        text-align: right;
+    }
 
+}
 
-        .op-cell-heading {
+.footer-grid {
 
-                font-weight: 400;
-                padding: 0;
-                padding-left: 10px;
-                line-height: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-row: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1rem;
+}
 
-                &::before {
-                        content: url(../assets/icons/time-clock.svg);
-                        position: relative;
-                        top: 5px;
-                        right: 10px;
-                }
-        }
+.footer-entry-title {
 
+    display: flex;
+    height: 4rem;
+    align-items: center;
 
-        .op-table {
-                width: 100%;
-                text-align: left;
-                font-size: 0.80rem;
-                margin-top: 0.6rem;
-        }
+}
 
-        .op-period-time {
-                text-align: right;
-        }
+.footer-social-links {
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
 
+.footer-hours {
+    max-width: 300px;
+}
+
+@media (max-width: 600px) {
+
+    .footer-grid {
+        display: block;
+
+    }
 
 
 }
 
-.contact_us p{
+@media (max-width: 1000px) {
 
-        padding-left: 50px;
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 3rem;
+    }
+
+    .footer-social-links {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
 }
 
-.phone::before{
-        content: url("../assets/icons/call.svg");
-        position: absolute;
-        left: 40px;
-        margin-top: 3px;
+
+.contact_us p {
+
+    padding-left: 10px;
+}
+
+.phone::before {
+    content: url("../assets/icons/call.svg");
+    position: relative;
+    right: 10px;
+    margin-top: 3px;
 
 }
 
-.adress::before{
-        content: url("../assets/icons/place.svg");
-        position: absolute;
-        left: 40px;
-        margin-top: 3px;
+.adress::before {
+    content: url("../assets/icons/place.svg");
+    height: 200%;
+    position: relative;
+    right: 10px;
+    margin-top: 3px;
 
 }
 
-.email::before{
-        content: url("../assets/icons/mail-1.svg");
-        position: absolute;
-        left: 40px;
-        margin-top: 2px;
+.email::before {
+    content: url("../assets/icons/mail-1.svg");
+    position: relative;
+    right: 10px;
+    margin-top: 2px;
 
 }

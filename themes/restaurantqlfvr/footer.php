@@ -1,36 +1,28 @@
 <footer>
-    <div class="container">
 
-        <div class="row">
+    <div class="footer-grid">
 
-            <div class="col-3 d-flex align-self-center">
-                <h3><?php bloginfo('name'); ?></h3>
-            </div>
-            <div class="col-3 d-flex align-self-center">
-                <h4> <?php echo get_the_title(47); ?></h4>
-            </div>
-            <div class="col-3 d-flex align-self-center">
-                <h4>Contact Us</h4>
-            </div>
-            <div class="col-3 d-flex align-self-center">
-                <h4>Instagram</h4>
-            </div>
+        <!--blog info-->
+        <div class="footer-blog-info">
+            <h3 class="footer-entry-title"><?php bloginfo('name'); ?></h3>
+            <p class="footer-entry-content"><?php echo get_bloginfo('description') ?></p>
         </div>
-        <div class="row">
-            <div class="col-3">
-                <p><?php echo get_bloginfo('description') ?>
-                </p>
 
+        <!--social links-->
+        <div class="footer-entry-content footer-social-links">
+            <?php get_template_part('template-parts/modules/module', 'social-links'); ?>
+        </div>
 
-            </div>
-            <div class="col-3">
+        <!--opening hours-->
+        <div class="footer-hours">
+            <h4 class="footer-entry-title"><?php echo get_the_title(47); ?></h4> <!--opening hours-->
+            <div class="footer-entry-content"><?php echo do_shortcode('[op-overview set_id="47"]'); ?></div>
+        </div>
+        <!--contact us-->
+        <div class="footer-contact">
+            <h4 class="footer-entry-title">Contact Us</h4>
 
-
-                <?php echo do_shortcode('[op-overview set_id="47"]'); ?>
-
-
-            </div>
-            <div class="col-3 contact_us ">
+            <div class="footer-entry-content contact_us">
                 <p class="phone"><?php echo the_field('phone', 35); ?></p>
                 <p class="adress"><?php
 
@@ -55,17 +47,20 @@
                 <p class="email">
                     <?php echo the_field('email', 35); ?>
                 </p>
-
             </div>
-            <div class="col-3">
+        </div>
+        <!--instagram feed-->
+        <div class="footer-instagram">
+            <h4 class="footer-entry-title">Instagram</h4>
+            <div class="footer-entry-content">
                 <?php // echo do_shortcode('[instagram-feed]'); ?>
             </div>
         </div>
-        <hr>
 
-    </div>
+
+    </div> <!--footer grid-->
+    <hr>
 </footer>
-
 <?php wp_footer(); ?>
 
 <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/assets/script.js"></script>

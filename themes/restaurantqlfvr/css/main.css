@@ -2877,26 +2877,94 @@ footer {
   footer .op-period-time {
     text-align: right; }
 
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-row: 1fr 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1rem; }
+
+.footer-entry-title {
+  display: flex;
+  height: 4rem;
+  align-items: center; }
+
+.footer-social-links {
+  grid-row-start: 2;
+  grid-row-end: 3; }
+
+.footer-hours {
+  max-width: 300px; }
+
+@media (max-width: 600px) {
+  .footer-grid {
+    display: block; } }
+
+@media (max-width: 1000px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem; }
+  .footer-social-links {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3; } }
+
 .contact_us p {
-  padding-left: 50px; }
+  padding-left: 10px; }
 
 .phone::before {
   content: url("../assets/icons/call.svg");
-  position: absolute;
-  left: 40px;
+  position: relative;
+  right: 10px;
   margin-top: 3px; }
 
 .adress::before {
   content: url("../assets/icons/place.svg");
-  position: absolute;
-  left: 40px;
+  height: 200%;
+  position: relative;
+  right: 10px;
   margin-top: 3px; }
 
 .email::before {
   content: url("../assets/icons/mail-1.svg");
-  position: absolute;
-  left: 40px;
+  position: relative;
+  right: 10px;
   margin-top: 2px; }
+
+/*Social links module*/
+.social-links {
+  /*padding: 1rem 4rem 0 0;
+    display: flex;
+    flex-direction: column;*/ }
+
+.social-link {
+  margin: 0 0.25rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .social-link-twitter {
+    background-color: #1DA1F2;
+    background-size: 10px;
+    background-image: url("../assets/icons/twitter.svg"); }
+  .social-link-facebook {
+    background-size: 6px;
+    background-color: #475996;
+    background-image: url("../assets/icons/facebook.svg"); }
+  .social-link-instagram {
+    background-size: 10px;
+    background-color: #C5435F;
+    background-image: url("../assets/icons/instagram.svg"); }
+  .social-link-mail {
+    background-size: 10px;
+    background-color: #000;
+    background-image: url("../assets/icons/mail-1.svg"); }
 
 .post-card {
   display: grid;
@@ -2993,6 +3061,9 @@ body {
     border-radius: 50%;
     text-align: center; }
 
+.article-recipe-social-area {
+  padding: 1rem 4rem 0 0; }
+
 /*recipes entry-header précision inutile pour le moment. voir par la suite...*/
 .entry-header {
   margin-top: -300px;
@@ -3006,36 +3077,6 @@ body {
     object-fit: cover;
     width: 100%;
     height: 100%; }
-
-.social-links {
-  padding: 1rem 4rem 0 0;
-  display: flex;
-  flex-direction: column; }
-
-.social-link {
-  margin: 0.25rem 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center; }
-  .social-link-twitter {
-    background-color: #1DA1F2;
-    background-size: 10px;
-    background-image: url("../assets/icons/twitter.svg"); }
-  .social-link-facebook {
-    background-size: 6px;
-    background-color: #475996;
-    background-image: url("../assets/icons/facebook.svg"); }
-  .social-link-instagram {
-    background-size: 10px;
-    background-color: #C5435F;
-    background-image: url("../assets/icons/instagram.svg"); }
-  .social-link-mail {
-    background-size: 10px;
-    background-color: #000;
-    background-image: url("../assets/icons/mail-1.svg"); }
 
 .text-center {
   text-align: center; }

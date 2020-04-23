@@ -10,6 +10,7 @@ $grid-gutter-width: 45px;
 @import 'icons';
 @import 'header';
 @import 'footer';
+@import 'modules';
 @import 'posts';
 
 
@@ -80,6 +81,11 @@ body {
 
 }
 
+.article-recipe-social-area {
+    padding: 1rem 4rem 0 0;
+
+}
+
 /*recipes entry-header précision inutile pour le moment. voir par la suite...*/
 .entry-header {
 
@@ -96,48 +102,6 @@ body {
         object-fit: cover;
         width: 100%;
         height: 100%;
-    }
-}
-
-
-.social-links {
-    padding: 1rem 4rem 0 0;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.social-link {
-    margin: 0.25rem 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: block;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    &-twitter {
-        background-color: #1DA1F2;
-        background-size: 10px;
-        background-image: url("../assets/icons/twitter.svg");
-    }
-
-    &-facebook {
-        background-size: 6px;
-        background-color: #475996;
-        background-image: url("../assets/icons/facebook.svg");
-    }
-
-    &-instagram {
-        background-size: 10px;
-        background-color: #C5435F;
-        background-image: url("../assets/icons/instagram.svg");
-    }
-
-    &-mail {
-        background-size: 10px;
-        background-color: #000;
-        background-image: url("../assets/icons/mail-1.svg");
     }
 }
 
