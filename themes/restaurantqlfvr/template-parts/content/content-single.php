@@ -31,13 +31,10 @@
         </header>
 
         <div class="d-flex">
-            <div class="social-links">
-                <i class="social-link social-link-facebook"></i>
-                <i class="social-link social-link-twitter"></i>
-                <i class="social-link social-link-instagram"></i>
-                <i class="social-link social-link-mail"></i>
-            </div>
 
+            <div class="article-recipe-social-area">
+                <?php get_template_part('template-parts/modules/module', 'social-links'); ?>
+            </div>
 
             <div class="entry-content">
 

@@ -1,0 +1,40 @@
+/*Social links module*/
+.social-links {
+    /*padding: 1rem 4rem 0 0;
+    display: flex;
+    flex-direction: column;*/
+}
+
+.social-link {
+    margin: 0 0.25rem;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-twitter {
+        background-color: #1DA1F2;
+        background-size: 10px;
+        background-image: url("../assets/icons/twitter.svg");
+    }
+
+    &-facebook {
+        background-size: 6px;
+        background-color: #475996;
+        background-image: url("../assets/icons/facebook.svg");
+    }
+
+    &-instagram {
+        background-size: 10px;
+        background-color: #C5435F;
+        background-image: url("../assets/icons/instagram.svg");
+    }
+
+    &-mail {
+        background-size: 10px;
+        background-color: #000;
+        background-image: url("../assets/icons/mail-1.svg");
+    }
+}
